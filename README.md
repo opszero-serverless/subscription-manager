@@ -7,7 +7,6 @@ Manage Subscriptions as a Function
 
 ## Create
 
-
 ```
 {
   "Action": "Create"

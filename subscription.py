@@ -1,22 +1,26 @@
 import json
+import boto3
+import stripe
 
-def hello(event, context):
-    body = {
-        "message": "Go Serverless v1.0! Your function executed successfully!",
-        "input": event
-    }
+DynamoDBTable = 'cashier'
 
-    response = {
-        "statusCode": 200,
-        "body": json.dumps(body)
-    }
 
-    return response
+class Subscription(object):
+    def get_subscription(self):
+        if
 
-    # Use this code if you don't use the http event with the LAMBDA-PROXY integration
-    """
-    return {
-        "message": "Go Serverless v1.0! Your function executed successfully!",
-        "event": event
-    }
-    """
+    def subscribe(self, id, product, email, plan):
+
+    def unsubscribe(self, id, product):
+        pass
+
+def handler(event, context):
+    if event['Method'] == 'POST':
+        pass
+    elif event['Method'] == 'GET':
+        pass
+    else:
+        return {
+            'StatusCode': 404,
+            'Message': 'Unknown event action'
+        }
